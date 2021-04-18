@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55E6F1DC0724C942237FCA1C /* Pods_Image_Pick_Complete.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A3E1A508EA267148DF6A39 /* Pods_Image_Pick_Complete.framework */; };
 		E7084D1C262BFA3D003A12B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7084D1B262BFA3D003A12B5 /* AppDelegate.swift */; };
 		E7084D1E262BFA3D003A12B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7084D1D262BFA3D003A12B5 /* SceneDelegate.swift */; };
 		E7084D20262BFA3D003A12B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7084D1F262BFA3D003A12B5 /* ViewController.swift */; };
 		E7084D23262BFA3D003A12B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7084D21262BFA3D003A12B5 /* Main.storyboard */; };
 		E7084D25262BFA40003A12B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7084D24262BFA40003A12B5 /* Assets.xcassets */; };
 		E7084D28262BFA40003A12B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7084D26262BFA40003A12B5 /* LaunchScreen.storyboard */; };
+		E738A533262CBA6D00A76112 /* Screenshot 2021-04-19 at 12.35.09 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = E738A532262CBA6D00A76112 /* Screenshot 2021-04-19 at 12.35.09 AM.png */; };
+		E74DF0AB262CA21600CDFE78 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF0AA262CA21600CDFE78 /* ProfileViewController.swift */; };
+		E74DF0AE262CA2FC00CDFE78 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF0AD262CA2FC00CDFE78 /* DesignableUITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C2EF550BF7CE3FDBDCF810C /* Pods-Image_Pick_Complete.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image_Pick_Complete.debug.xcconfig"; path = "Target Support Files/Pods-Image_Pick_Complete/Pods-Image_Pick_Complete.debug.xcconfig"; sourceTree = "<group>"; };
+		6C14086893FF0A3F1B87F28A /* Pods-Image_Pick_Complete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image_Pick_Complete.release.xcconfig"; path = "Target Support Files/Pods-Image_Pick_Complete/Pods-Image_Pick_Complete.release.xcconfig"; sourceTree = "<group>"; };
+		87A3E1A508EA267148DF6A39 /* Pods_Image_Pick_Complete.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Image_Pick_Complete.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7084D18262BFA3D003A12B5 /* Image_Pick_Complete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Image_Pick_Complete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7084D1B262BFA3D003A12B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7084D1D262BFA3D003A12B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		E7084D24262BFA40003A12B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7084D27262BFA40003A12B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7084D29262BFA40003A12B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E738A532262CBA6D00A76112 /* Screenshot 2021-04-19 at 12.35.09 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2021-04-19 at 12.35.09 AM.png"; path = "../../../../../var/folders/dl/g8m4d4s16g9173mh32t20znh0000gn/T/TemporaryItems/NSIRD_screencaptureui_sXnSL9/Screenshot 2021-04-19 at 12.35.09 AM.png"; sourceTree = "<group>"; };
+		E74DF0AA262CA21600CDFE78 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E74DF0AD262CA2FC00CDFE78 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E6F1DC0724C942237FCA1C /* Pods_Image_Pick_Complete.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86364C6D0E57A225DF7EF7E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C2EF550BF7CE3FDBDCF810C /* Pods-Image_Pick_Complete.debug.xcconfig */,
+				6C14086893FF0A3F1B87F28A /* Pods-Image_Pick_Complete.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A113CF51210951E8E276A9B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87A3E1A508EA267148DF6A39 /* Pods_Image_Pick_Complete.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7084D0F262BFA3D003A12B5 = {
 			isa = PBXGroup;
 			children = (
 				E7084D1A262BFA3D003A12B5 /* Image_Pick_Complete */,
 				E7084D19262BFA3D003A12B5 /* Products */,
+				86364C6D0E57A225DF7EF7E1 /* Pods */,
+				A113CF51210951E8E276A9B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +88,10 @@
 			children = (
 				E7084D1B262BFA3D003A12B5 /* AppDelegate.swift */,
 				E7084D1D262BFA3D003A12B5 /* SceneDelegate.swift */,
+				E738A532262CBA6D00A76112 /* Screenshot 2021-04-19 at 12.35.09 AM.png */,
 				E7084D1F262BFA3D003A12B5 /* ViewController.swift */,
+				E74DF0AA262CA21600CDFE78 /* ProfileViewController.swift */,
+				E74DF0AD262CA2FC00CDFE78 /* DesignableUITextField.swift */,
 				E7084D21262BFA3D003A12B5 /* Main.storyboard */,
 				E7084D24262BFA40003A12B5 /* Assets.xcassets */,
 				E7084D26262BFA40003A12B5 /* LaunchScreen.storyboard */,
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7084D2C262BFA40003A12B5 /* Build configuration list for PBXNativeTarget "Image_Pick_Complete" */;
 			buildPhases = (
+				76C18D5488DE683801DE28AD /* [CP] Check Pods Manifest.lock */,
 				E7084D14262BFA3D003A12B5 /* Sources */,
 				E7084D15262BFA3D003A12B5 /* Frameworks */,
 				E7084D16262BFA3D003A12B5 /* Resources */,
+				0373A4FE6563463F8956D309 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7084D28262BFA40003A12B5 /* LaunchScreen.storyboard in Resources */,
+				E738A533262CBA6D00A76112 /* Screenshot 2021-04-19 at 12.35.09 AM.png in Resources */,
 				E7084D25262BFA40003A12B5 /* Assets.xcassets in Resources */,
 				E7084D23262BFA3D003A12B5 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +168,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0373A4FE6563463F8956D309 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Image_Pick_Complete/Pods-Image_Pick_Complete-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Image_Pick_Complete/Pods-Image_Pick_Complete-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Image_Pick_Complete/Pods-Image_Pick_Complete-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C18D5488DE683801DE28AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Image_Pick_Complete-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E7084D14262BFA3D003A12B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74DF0AE262CA2FC00CDFE78 /* DesignableUITextField.swift in Sources */,
 				E7084D20262BFA3D003A12B5 /* ViewController.swift in Sources */,
 				E7084D1C262BFA3D003A12B5 /* AppDelegate.swift in Sources */,
+				E74DF0AB262CA21600CDFE78 /* ProfileViewController.swift in Sources */,
 				E7084D1E262BFA3D003A12B5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +363,7 @@
 		};
 		E7084D2D262BFA40003A12B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2EF550BF7CE3FDBDCF810C /* Pods-Image_Pick_Complete.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +383,7 @@
 		};
 		E7084D2E262BFA40003A12B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C14086893FF0A3F1B87F28A /* Pods-Image_Pick_Complete.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
