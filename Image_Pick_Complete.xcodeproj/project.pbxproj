@@ -14,9 +14,7 @@
 		E7084D23262BFA3D003A12B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7084D21262BFA3D003A12B5 /* Main.storyboard */; };
 		E7084D25262BFA40003A12B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7084D24262BFA40003A12B5 /* Assets.xcassets */; };
 		E7084D28262BFA40003A12B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7084D26262BFA40003A12B5 /* LaunchScreen.storyboard */; };
-		E738A533262CBA6D00A76112 /* Screenshot 2021-04-19 at 12.35.09 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = E738A532262CBA6D00A76112 /* Screenshot 2021-04-19 at 12.35.09 AM.png */; };
-		E74DF0AB262CA21600CDFE78 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF0AA262CA21600CDFE78 /* ProfileViewController.swift */; };
-		E74DF0AE262CA2FC00CDFE78 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF0AD262CA2FC00CDFE78 /* DesignableUITextField.swift */; };
+		E7E13E75262FFE2600201978 /* oppsInternet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7E13E74262FFE2600201978 /* oppsInternet.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +29,7 @@
 		E7084D24262BFA40003A12B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7084D27262BFA40003A12B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7084D29262BFA40003A12B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E738A532262CBA6D00A76112 /* Screenshot 2021-04-19 at 12.35.09 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2021-04-19 at 12.35.09 AM.png"; path = "../../../../../var/folders/dl/g8m4d4s16g9173mh32t20znh0000gn/T/TemporaryItems/NSIRD_screencaptureui_sXnSL9/Screenshot 2021-04-19 at 12.35.09 AM.png"; sourceTree = "<group>"; };
-		E74DF0AA262CA21600CDFE78 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		E74DF0AD262CA2FC00CDFE78 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+		E7E13E74262FFE2600201978 /* oppsInternet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = oppsInternet.jpg; path = ../../oppsInternet.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				E7084D1B262BFA3D003A12B5 /* AppDelegate.swift */,
+				E7E13E74262FFE2600201978 /* oppsInternet.jpg */,
 				E7084D1D262BFA3D003A12B5 /* SceneDelegate.swift */,
-				E738A532262CBA6D00A76112 /* Screenshot 2021-04-19 at 12.35.09 AM.png */,
 				E7084D1F262BFA3D003A12B5 /* ViewController.swift */,
-				E74DF0AA262CA21600CDFE78 /* ProfileViewController.swift */,
-				E74DF0AD262CA2FC00CDFE78 /* DesignableUITextField.swift */,
 				E7084D21262BFA3D003A12B5 /* Main.storyboard */,
 				E7084D24262BFA40003A12B5 /* Assets.xcassets */,
 				E7084D26262BFA40003A12B5 /* LaunchScreen.storyboard */,
@@ -160,8 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7084D28262BFA40003A12B5 /* LaunchScreen.storyboard in Resources */,
-				E738A533262CBA6D00A76112 /* Screenshot 2021-04-19 at 12.35.09 AM.png in Resources */,
 				E7084D25262BFA40003A12B5 /* Assets.xcassets in Resources */,
+				E7E13E75262FFE2600201978 /* oppsInternet.jpg in Resources */,
 				E7084D23262BFA3D003A12B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,10 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E74DF0AE262CA2FC00CDFE78 /* DesignableUITextField.swift in Sources */,
 				E7084D20262BFA3D003A12B5 /* ViewController.swift in Sources */,
 				E7084D1C262BFA3D003A12B5 /* AppDelegate.swift in Sources */,
-				E74DF0AB262CA21600CDFE78 /* ProfileViewController.swift in Sources */,
 				E7084D1E262BFA3D003A12B5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

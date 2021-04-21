@@ -7,7 +7,7 @@
 
 import UIKit
 import Photos
-import TOCropViewController
+import CropViewController
 
 class ViewController: UIViewController {
     
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkPermission()
+        presentCropViewController((pickImageView.image ?? UIImage(named: "oppsInternet.jpg"))!)
         photoPickerButtonTapped.target = self
         photoPickerButtonTapped.action = #selector(handlePhotoButtonTappedAction(sender: ))
     }
@@ -31,7 +31,8 @@ class ViewController: UIViewController {
         }
         let gallaryAction = UIAlertAction(title: "Gallary", style: UIAlertAction.Style.default){
             UIAlertAction in
-            self.openGallary()
+//            self.openGallary()
+            self.checkPermission()
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel){
             UIAlertAction in
@@ -54,6 +55,7 @@ extension ViewController:  UIImagePickerControllerDelegate & UINavigationControl
     func openCamera(){
         if(UIImagePickerController .isSourceTypeAvailable(UIImagePickerController.SourceType.camera)){
             picker.sourceType = UIImagePickerController.SourceType.camera
+            self.picker.allowsEditing = true
             self.present(picker, animated: true, completion: nil)
         }else{
             let alert = UIAlertController(title: "Warning", message: "You don't have camera", preferredStyle: UIAlertController.Style.alert)
@@ -64,16 +66,16 @@ extension ViewController:  UIImagePickerControllerDelegate & UINavigationControl
     
     func openGallary(){
         picker.sourceType = UIImagePickerController.SourceType.photoLibrary
+        self.picker.allowsEditing = true
         self.present(picker, animated: true, completion: nil)
     }
     
     //MARK:UIImagePickerControllerDelegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-//            presentCropViewController(pickedImage)
             pickImageView.contentMode = .scaleAspectFit
             pickImageView.image = pickedImage
-            }
+        }
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -120,19 +122,24 @@ extension ViewController:  UIImagePickerControllerDelegate & UINavigationControl
     }
 }
 
-
-
-// to crop images using 3rd party
-//extension ViewController: TOCropViewControllerDelegate {
-//    func presentCropViewController(_ img: UIImage) {
-//       // let image: UIImage = ... //Load an image
-//
-//      let cropViewController = CropViewController(image: img)
-//      cropViewController.delegate = self
-//        self.present(cropViewController, animated: true, completion: nil)
-//    }
-//
-//    func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
-//            // 'image' is the newly cropped version of the original image
-//        }
-//}
+ // To crop images using 3rd party
+extension ViewController: CropViewControllerDelegate {
+    func presentCropViewController(_ img: UIImage) {
+        // let image: UIImage = ... //Load an image
+        let cropViewController = CropViewController(image: img)
+        cropViewController.delegate = self
+        self.present(cropViewController, animated: true, completion: nil)
+    }
+    
+    func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
+        // 'image' is the newly cropped version of the original image
+        pickImageView.image = image
+        cropViewController.dismiss(animated: true, completion: nil)
+    }
+    
+    func cropViewController(_ cropViewController: CropViewController, didFinishCancelled cancelled: Bool) {
+        cropViewController.dismiss(animated: true) {
+            print("cancelled called")
+        }
+    }
+}

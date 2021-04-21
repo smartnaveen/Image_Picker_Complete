@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ij-RF-rhF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vdL-ek-7B4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,108 +41,6 @@
             </objects>
             <point key="canvasLocation" x="1005.7971014492755" y="75.669642857142847"/>
         </scene>
-        <!--Profile View Controller-->
-        <scene sceneID="042-WM-45m">
-            <objects>
-                <viewController id="6ij-RF-rhF" customClass="ProfileViewController" customModule="Image_Pick_Complete" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zDs-MS-IPG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter your name....." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LtF-8F-tFA" customClass="DesignableUITextField" customModule="Image_Pick_Complete" customModuleProvider="target">
-                                <rect key="frame" x="20" y="94" width="374" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="fTE-Q0-Rkv"/>
-                                </constraints>
-                                <color key="textColor" systemColor="systemTealColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage">
-                                        <imageReference key="value" image="mail.and.text.magnifyingglass" catalog="system" symbolScale="small" renderingMode="original"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" systemColor="systemIndigoColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="please enter password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DWu-0W-jAv" customClass="DesignableUITextField" customModule="Image_Pick_Complete" customModuleProvider="target">
-                                <rect key="frame" x="20" y="184" width="374" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="kew-9V-rpj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage">
-                                        <imageReference key="value" image="square.and.arrow.up" catalog="system" renderingMode="template"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" systemColor="systemTealColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="applelogo" catalog="system"/>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please type something.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gt1-3P-d5A" customClass="DesignableUITextField" customModule="Image_Pick_Complete" customModuleProvider="target">
-                                <rect key="frame" x="20" y="274" width="374" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="JVV-dc-CKk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage">
-                                        <imageReference key="value" image="square.and.arrow.up" catalog="system" symbolScale="default" renderingMode="original"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage">
-                                        <imageReference key="value" image="pencil.circle" catalog="system" renderingMode="original"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" systemColor="systemGreenColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="IPV-4U-0ej"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
-                        <constraints>
-                            <constraint firstItem="gt1-3P-d5A" firstAttribute="leading" secondItem="IPV-4U-0ej" secondAttribute="leading" constant="20" id="1XS-Wh-bMV"/>
-                            <constraint firstItem="IPV-4U-0ej" firstAttribute="trailing" secondItem="gt1-3P-d5A" secondAttribute="trailing" constant="20" id="222-i4-TpY"/>
-                            <constraint firstItem="DWu-0W-jAv" firstAttribute="top" secondItem="LtF-8F-tFA" secondAttribute="bottom" constant="50" id="43J-NF-ln8"/>
-                            <constraint firstItem="gt1-3P-d5A" firstAttribute="top" secondItem="DWu-0W-jAv" secondAttribute="bottom" constant="50" id="8EQ-cH-ivh"/>
-                            <constraint firstItem="IPV-4U-0ej" firstAttribute="trailing" secondItem="DWu-0W-jAv" secondAttribute="trailing" constant="20" id="Rb6-fh-V3C"/>
-                            <constraint firstItem="LtF-8F-tFA" firstAttribute="top" secondItem="IPV-4U-0ej" secondAttribute="top" constant="50" id="aec-0t-woe"/>
-                            <constraint firstItem="LtF-8F-tFA" firstAttribute="leading" secondItem="IPV-4U-0ej" secondAttribute="leading" constant="20" id="d3k-Yz-odX"/>
-                            <constraint firstItem="DWu-0W-jAv" firstAttribute="leading" secondItem="IPV-4U-0ej" secondAttribute="leading" constant="20" id="imH-ad-d5p"/>
-                            <constraint firstItem="IPV-4U-0ej" firstAttribute="trailing" secondItem="LtF-8F-tFA" secondAttribute="trailing" constant="20" id="zOi-3i-Ecg"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="nameTextFiled" destination="LtF-8F-tFA" id="o72-dl-QAb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="629-Fp-HxK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1768" y="76"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="7YC-MI-Ayt">
             <objects>
@@ -163,37 +60,10 @@
             <point key="canvasLocation" x="95.652173913043484" y="75.669642857142847"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="DWu-0W-jAv">
-            <size key="intrinsicContentSize" width="229.5" height="34"/>
-        </designable>
-        <designable name="LtF-8F-tFA">
-            <size key="intrinsicContentSize" width="231.5" height="34"/>
-        </designable>
-        <designable name="gt1-3P-d5A">
-            <size key="intrinsicContentSize" width="232" height="34"/>
-        </designable>
-    </designables>
     <resources>
-        <image name="applelogo" catalog="system" width="103" height="128"/>
-        <image name="mail.and.text.magnifyingglass" catalog="system" width="128" height="95"/>
-        <image name="pencil.circle" catalog="system" width="128" height="121"/>
         <image name="photo.on.rectangle" catalog="system" width="128" height="96"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
