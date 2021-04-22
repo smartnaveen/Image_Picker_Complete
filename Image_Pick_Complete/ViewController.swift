@@ -87,7 +87,7 @@ extension ViewController:  UIImagePickerControllerDelegate & UINavigationControl
     
     
     
-//oldcode need to refine
+//Check allow for permission PhotoGallery......
     func checkPermission() {
         let photoAuthorizationStatus = PHPhotoLibrary.authorizationStatus()
         switch photoAuthorizationStatus {
