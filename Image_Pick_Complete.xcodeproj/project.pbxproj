@@ -14,7 +14,7 @@
 		E7084D23262BFA3D003A12B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7084D21262BFA3D003A12B5 /* Main.storyboard */; };
 		E7084D25262BFA40003A12B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7084D24262BFA40003A12B5 /* Assets.xcassets */; };
 		E7084D28262BFA40003A12B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7084D26262BFA40003A12B5 /* LaunchScreen.storyboard */; };
-		E7E13E75262FFE2600201978 /* oppsInternet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7E13E74262FFE2600201978 /* oppsInternet.jpg */; };
+		E7826A2C263245B500D9EC15 /* oppsInternet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7826A2B263245B400D9EC15 /* oppsInternet.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		E7084D24262BFA40003A12B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7084D27262BFA40003A12B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7084D29262BFA40003A12B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7E13E74262FFE2600201978 /* oppsInternet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = oppsInternet.jpg; path = ../../oppsInternet.jpg; sourceTree = "<group>"; };
+		E7826A2B263245B400D9EC15 /* oppsInternet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oppsInternet.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				E7084D1B262BFA3D003A12B5 /* AppDelegate.swift */,
-				E7E13E74262FFE2600201978 /* oppsInternet.jpg */,
+				E7826A2B263245B400D9EC15 /* oppsInternet.jpg */,
 				E7084D1D262BFA3D003A12B5 /* SceneDelegate.swift */,
 				E7084D1F262BFA3D003A12B5 /* ViewController.swift */,
 				E7084D21262BFA3D003A12B5 /* Main.storyboard */,
@@ -155,7 +155,7 @@
 			files = (
 				E7084D28262BFA40003A12B5 /* LaunchScreen.storyboard in Resources */,
 				E7084D25262BFA40003A12B5 /* Assets.xcassets in Resources */,
-				E7E13E75262FFE2600201978 /* oppsInternet.jpg in Resources */,
+				E7826A2C263245B500D9EC15 /* oppsInternet.jpg in Resources */,
 				E7084D23262BFA3D003A12B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
